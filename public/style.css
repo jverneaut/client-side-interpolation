@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+#canvas {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08);
+  border: 4px solid white;
+}
+
+.container {
+  display: flex;
+}
+
+.info {
+  width: 400px;
+  padding-right: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info__title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.info__paragraph {
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+.info__colors {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  background: black;
+}
+
+.info__color {
+  padding: 8px 16px;
+}
+
+.info__color--red {
+  color: red;
+}
+.info__color--orange {
+  color: orange;
+}
+.info__color--white {
+  color: white;
+}

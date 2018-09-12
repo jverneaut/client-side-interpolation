@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Client-Side Interpolation</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="info">
+      <div class="info__title">
+        Client-Side Interpolation
+      </div>
+      <div class="info__paragraphs">
+        <div class="info__paragraph">
+          For real-time games, an authoritative server controls the game state. Clients are only responsible for
+          sending
+          commands ('Left',
+          'Right', etc.) and rendering the state.
+        </div>
+        <div class="info__paragraph">
+          While this approach prevents cheating and allows lower-end machines to run the game, it introduces some delay
+          between
+          clients. Furthermore, the server can't send 60fps updates to every player in the room.
+        </div>
+        <div class="info__paragraph">
+          As such, clients rely on interpolation to render a fluid game experience: instead of rendering immediately
+          every new state, the client buffers them and then performs linear interpolation between the last 2.
+        </div>
+        <div class="info__paragraph">
+          In this demo, some delay is introduced to simulate a real client-server communication.
+        </div>
+      </div>
+      <div class="info__colors">
+        <div class="info__color info__color--red">■ Input</div>
+        <div class="info__color info__color--orange">■ Non-interpolated</div>
+        <div class="info__color info__color--white">■ Interpolated</div>
+      </div>
+    </div>
+    <canvas id="canvas"></canvas>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
